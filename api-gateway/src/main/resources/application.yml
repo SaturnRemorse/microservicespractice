@@ -15,7 +15,6 @@ spring:
             - Method= GET, POST
           filters:
             - StripPrefix=2
-            - RedirectTo=302, http://youtube.com
         - id: inventory-service
           uri: lb://INVENTORY-SERVICE
           predicates:
